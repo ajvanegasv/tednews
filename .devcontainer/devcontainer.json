@@ -1,0 +1,24 @@
+{
+    "name": "tednews_frontend",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "astro-build.astro-vscode",
+                "Vue.volar",
+                "bradlc.vscode-tailwindcss"
+            ]
+        },
+        "settings": {
+            "terminal.integrated.shell.linux": null,
+            "terminal.integrated.shell.osx": null,
+            "terminal.integrated.shell.windows": null,
+            "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib"
+        }
+    },
+    "forwardPorts": [4321, 3000],
+    "containerEnv": {
+        "CHOKIDAR_USEPOLLING": "true"
+    }
+}
