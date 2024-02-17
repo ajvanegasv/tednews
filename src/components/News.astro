@@ -1,0 +1,12 @@
+---
+import dayjs from 'dayjs';
+
+const today = dayjs().format('DD/MM/YYYY');
+---
+
+<section class="py-2">
+    <div class="font-nimbus text-[0.55rem] flex justify-between text-color-tednews-text">
+        <p >Recently news.</p>
+        <p>{today}</p>
+    </div>
+</section>

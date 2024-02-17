@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -8,8 +11,13 @@ export default {
 			},
 			colors: {
 				'periodic-paper': '#c6c2b5',
-				'periodic-paper-light': '#c2bdaf'
-			}
+				'periodic-paper-light': '#c2bdaf',
+				'green-tednews': '#152d17',
+				'color-tednews-text': '#152d17'
+			},
+			fontFamily: {
+				nimbus: ['TAN-NIMBUS']
+			},
 		},
 		screens: {
 			'xxs': '360px',

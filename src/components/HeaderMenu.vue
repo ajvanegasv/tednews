@@ -20,8 +20,7 @@
                 </rect>
             </svg>
         </div>
-        <div class="absolute top-[48x
-        px]">
+        <div class="absolute top-[48px]">
             <div class="relative">
                 <div 
                     class="absolute w-screen z-10 bg-periodic-paper transition-height duration-500 ease-in-out" 

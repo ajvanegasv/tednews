@@ -3,15 +3,12 @@ import HeaderMenu from '../components/HeaderMenu.vue'
 import { Image } from 'astro:assets'
 import logoImgBgRemoved from '../assets/logo-1024x263-notbg.png'
 import UserHeaderContent from '../components/UserHeaderContent.astro'
+import Search from '../components/Search.vue'
 ---
 
-<header class="bg-periodic-paper texture py-4 shadow-xl">
-    <nav class="container mx-auto flex justify-between">
-        <HeaderMenu client:load />
-        <div class="flex items-center justify-center">
-            <Image src={logoImgBgRemoved} class="w-8/12 h-auto" alt="Ted news logo" />
-        </div>
-        <UserHeaderContent />
+<header class="bg-periodic-paper texture py-1 shadow-sm">
+    <nav class="container mx-2 py-2 flex justify-between">
+        <Search />
     </nav>
 </header>
 

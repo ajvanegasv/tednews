@@ -1,7 +1,14 @@
 ---
 import TedHeader from '../layouts/header.astro'
 import TedFooter from '../layouts/footer.astro'
+import News from '../components/News.astro'
+import HeaderOptions from '../components/HeaderOptions.astro'
 ---
 
 <TedHeader />
+<div class="container px-3 py-10">
+    <h1 class="font-nimbus font-bold text-color-tednews-text text-[3.1rem] transform scale-y-125 border-color-tednews-text border-b-2">TED NEWS</h1>
+    <HeaderOptions />
+    <News />
+</div>
 <TedFooter />
