@@ -1,5 +1,5 @@
 {
-  "name": "source",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,20 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vue": "^4.0.8",
-    "@iconify-json/material-symbols": "^1.1.71",
-    "astro": "^4.2.6",
-    "astro-icon": "^1.0.3",
-    "dayjs": "^1.11.10",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3",
-    "vue": "^3.4.15"
-  },
-  "devDependencies": {
-    "@typescript-eslint/parser": "^6.19.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-astro": "^0.31.3"
+    "astro": "^4.5.1",
+    "@astrojs/check": "^0.5.7",
+    "typescript": "^5.4.2"
   }
 }
