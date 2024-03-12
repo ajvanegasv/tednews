@@ -1,0 +1,30 @@
+---
+import Social from "./svg/Social.astro";
+---
+
+<footer class="flex items-center flex-wrap justify-center">
+  <h1 class="font-ted text-ted-green text-[1.38rem] mb-[1.5rem]">Ted news</h1>
+  <div class="w-[20.3125rem] h-0 border-ted-green border-[1.6px] mb-[1.5rem]">
+  </div>
+  <div class="flex gap-3 mb-[1.5rem] text-sm">
+    <a>Home</a>
+    <a>News</a>
+    <a>Lyrics</a>
+    <a>Community</a>
+    <a>Promote</a>
+  </div>
+  <Social divClass="mb-[1.5rem]" />
+  <div class="w-[20.3125rem] h-0 border-ted-green border-[1.6px] mb-[1.5rem]">
+  </div>
+  <p class="text-sm mb-[1.5rem]">© Copyright Ted News. All right reserved.</p>
+</footer>
+
+<style is:global>
+  @font-face {
+    font-family: "TAN-NIMBUS";
+    src: url("/fonts/TAN-NIMBUS.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
