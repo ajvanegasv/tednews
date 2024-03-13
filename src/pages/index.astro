@@ -1,10 +1,92 @@
 ---
+import { Image } from 'astro:assets'
+
 import Principal from '../layouts/Principal.astro'
+import ArrowForward from '../components/svg/ArrowForward.astro'
+import ArrowBackRounded from '../components/svg/ArrowBackRounded.astro'
+import ArrowForwardRounded from '../components/svg/ArrowForwardRounded.astro'
 ---
 
 <Principal>
-	<section class="bg-ted-image bg-cover w-full h-[375px] h-max-[375px] mb-10">
+	<section class="bg-ted-image bg-cover w-full h-[375px] h-max-[375px] mb-16">
 
 	</section>
-	
+	<section class="mx-[1.5rem] mb-16 flex flex-col justify-center items-center">
+		<div class="flex flex-col items-center mb-8">
+			<Image
+				src="/notice-1.png"
+				alt="notice 1"
+				width={335}
+				height={313}
+			/>
+			<p class="text-ted-gray mt-6 mb-2">By Jack Brown | February 6, 2024</p>
+			<h1 class="text-xl-ted text-center font-semibold">
+				Latest albums in the next month by Tylor Swift
+			</h1>
+		</div>
+		<div class="flex flex-wrap gap-3">
+			<div class="max-w-[156px]">
+				<Image
+					src="/notice-2.png"
+					alt="notice 2"
+					width={156}
+					height={90}
+				/>
+				<p class="text-ted-gray text-sm">Jake Thompson | 3.1.24</p>
+				<h1 class="font-semibold">Top artists join to the charity concerts in US</h1>
+			</div>
+			<div class="max-w-[156px]">
+				<Image
+					src="/notice-3.png"
+					alt="notice 3"
+					width={156}
+					height={90}
+				/>
+				<p class="text-ted-gray text-sm">Jake Thompson | 3.1.24</p>
+				<h1 class="font-semibold">Top artists join to the charity concerts in US</h1>
+			</div>
+			<div class="max-w-[156px]">
+				<Image
+					src="/notice-4.png"
+					alt="notice 4"
+					width={156}
+					height={90}
+				/>
+				<p class="text-ted-gray text-sm">Jake Thompson | 3.1.24</p>
+				<h1 class="font-semibold">Top artists join to the charity concerts in US</h1>
+			</div>
+			<div class="max-w-[156px]">
+				<Image
+					src="/notice-5.png"
+					alt="notice 5"
+					width={156}
+					height={90}
+				/>
+				<p class="text-ted-gray text-sm">Jake Thompson | 3.1.24</p>
+				<h1 class="font-semibold">Top artists join to the charity concerts in US</h1>
+			</div>
+		</div>
+		<button class="font-ted border-2 p-2 flex gap-4 items-center text-ted-green border-ted-green mt-14">
+			View all news <ArrowForward />
+		</button>
+	</section>
+	<section class="mx-[1.5rem] mb-16">
+		<div class="font-ted text-xl text-ted-green flex justify-between mb-10">
+			<h1>Latest song Lyrics</h1>
+			<div class="flex gap-3 items-center">
+				<button>
+					<ArrowBackRounded />
+				</button>
+				<button>
+					<ArrowForwardRounded />
+				</button>
+			</div>
+		</div>
+		<div class="bg-ted-image bg-cover h-85">
+
+		</div>
+		<button class="font-ted border-2 p-2 flex gap-4 items-center text-ted-green border-ted-green mt-14 mx-auto">
+			View all lyrics <ArrowForward />
+		</button>
+	</section>
 </Principal>
