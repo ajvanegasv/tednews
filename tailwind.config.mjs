@@ -8,7 +8,8 @@ export default {
 			},
 			colors: {
 				'ted-green': '#142d17',
-				'ted-gray': '#879788'
+				'ted-gray': '#879788',
+				'ted-green-2': '#122314'
 			},
 			backgroundImage: {
 				'ted-image': "url('/ted-image-1.png')"
