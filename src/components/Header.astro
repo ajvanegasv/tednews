@@ -1,13 +1,11 @@
 ---
-import HamburguerMenu from "./svg/HamburguerMenu.astro"
+import HamburguerMenu from "./svg/icons/astro/HamburguerMenu.astro"
 import MobileMenu from "./MobileMenu.tsx";
 ---
 
 <header>
     <div class="flex justify-between items-center mx-6 mt-10 mb-6">
         <h1 class="font-ted text-2xl text-ted-green">TED NEWS</h1>
-        <MobileMenu client:load>
-            <HamburguerMenu /> 
-        </MobileMenu>        
+        <MobileMenu client:load />              
     </div>    
 </header>

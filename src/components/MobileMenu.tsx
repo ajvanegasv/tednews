@@ -1,8 +1,8 @@
-import type { ComponentChildren } from "preact";
 import { useSignal } from "@preact/signals";
 
+import { Close, Menu } from "../components/svg/icons/preact/Material-Symbols.tsx";
 
-export default function MobileMenu(props: { children: ComponentChildren }) {
+export default function MobileMenu() {
     const isMenuOpen = useSignal<boolean>(false);
 
     const toggleMenu = () => {        
@@ -21,7 +21,7 @@ export default function MobileMenu(props: { children: ComponentChildren }) {
                 <div class="mt-14 flex justify-end px-6">
                     <div></div>
                     <button onClick={toggleMenu}>
-                        x
+                        <Close width="1.5em" height="1.5em" />
                     </button>
                 </div>
                 <ul class="px-6 text-xl mt-8">
@@ -33,7 +33,7 @@ export default function MobileMenu(props: { children: ComponentChildren }) {
                 </ul>             
             </div>
             <button onClick={toggleMenu}>
-                {props.children}
+                <Menu width="1.5em" height="1.5em" />
             </button> 
         </>
     );

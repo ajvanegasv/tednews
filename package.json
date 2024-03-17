@@ -14,18 +14,13 @@
     "@astrojs/preact": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.5.1",
+    "astro-icon": "^1.1.0",
     "preact": "^10.19.6",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.1",
-    "astro-icon": "^1.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
-  },
-  "overrides": {
-    "react": "npm:@preact/compat@latest",
-    "react-dom": "npm:@preact/compat@latest"
   }
 }
