@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 
-import { Close, Menu } from "../components/svg/icons/preact/Material-Symbols.tsx";
+import { Close, Menu, Search } from "../components/svg/icons/preact/Material-Symbols.tsx";
 
 export default function MobileMenu() {
     const isMenuOpen = useSignal<boolean>(false);
@@ -30,7 +30,10 @@ export default function MobileMenu() {
                     <li class="my-3">Lyrics</li>
                     <li class="my-3">Community</li>
                     <li class="my-3">Promote</li>     
-                </ul>             
+                </ul>
+                <div class="px-6 mt-6">
+                    <Search width="1.5em" height="1.5em" />          
+                </div>
             </div>
             <button onClick={toggleMenu}>
                 <Menu width="1.5em" height="1.5em" />
