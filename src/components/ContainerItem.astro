@@ -1,0 +1,16 @@
+---
+import type { ContainerItemProps } from '../interfaces/components'
+
+const { count } = Astro.props as ContainerItemProps;
+---
+
+
+<div>
+    <div class="flex gap-4">
+        <p class="font-ted text-xl text-ted-green">
+            {count}
+        </p>
+        <slot />
+    </div>
+    <div class="border border-ted-gray-2 w-full"></div>
+</div>
