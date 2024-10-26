@@ -1,0 +1,15 @@
+---
+import type { Playlist } from "../../../interfaces/playlists"
+import Playlists from "./Playlists.vue"
+
+const tedNewsApi = import.meta.env.TED_NEW_API
+const tedNewsChannelId = import.meta.env.TED_NEWS_CHANNEL_ID
+
+const response = await fetch(`${tedNewsApi}/playlists/?channelId=${tedNewsChannelId}`)
+const data: Playlist[] = await response.json()
+
+---
+
+<section class="bg-ted-image bg-cover w-full h-[375px] h-max-[375px] mb-16">
+    <Playlists client:load playlists={data} />
+</section>

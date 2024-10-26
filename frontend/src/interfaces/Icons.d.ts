@@ -1,5 +1,4 @@
-
 export interface MaterialSymbolsProps {
-	width?: string;
-	height?: string;
+  width?: string;
+  height?: string;
 }
